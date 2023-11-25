@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shoujo News</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll; /* Adiciona a barra de rolagem vertical */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Centralizando conteúdo */
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .anime-item {
+            border: 2px solid white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 500px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .anime-item img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+
+        .anime-info {
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        /* Estilos para o áudio */
+        audio {
+            margin-top: 20px; /* Espaço acima do áudio */
+        }
+
+        .audio-message {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px; /* Espaço abaixo da mensagem */
+        }
+        
+        .snowflakes {
+            position: fixed;
+            top: -150px; /* Começar mais acima para dar tempo de cair */
+            left: 0;
+            pointer-events: none; /* Para evitar interações do usuário com os flocos de neve */
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Coloca os flocos de neve atrás do conteúdo */
+        }
+
+        .snowflake {
+            position: absolute;
+            display: block;
+            width: 20px; /* Tamanho maior */
+            height: 20px; /* Tamanho maior */
+            background: white;
+            opacity: 0.5; /* Transparência dos flocos de neve */
+            border-radius: 50%;
+            animation: falling linear infinite;
+        }
+
+        @keyframes falling {
+            0% {
+                transform: translateY(-150px); /* Começar mais acima */
+            }
+            100% {
+                transform: translateY(120vh); /* Altura total da janela do navegador + um pouco mais */
+            }
+        }
+
+        /* Posições aleatórias para os flocos de neve */
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 12s; /* Mais lento */
+        }
+
+        .snowflake:nth-child(2) {
+            left: 20%;
+            animation-duration: 18s; /* Mais lento */
+        }
+
+        .snowflake:nth-child(3) {
+            left: 30%;
+            animation-duration: 15s; /* Mais lento */
+        }
+
+        .snowflake:nth-child(4) {
+            left: 40%;
+            animation-duration: 20s; /* Mais lento */
+        }
+
+        .snowflake:nth-child(5) {
+            left: 50%;
+            animation-duration: 16s; /* Mais lento */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+    </div>
+
+    <div class="container">
+        <h1>Animes Shoujo</h1>
+
+        <div class="anime-list">
+            <div class="anime-item">
+                <img src="./image1.png" alt="Anime 1">
+                <div class="anime-info">
+                    <h2>Akatsuki no Yona</h2>
+                    <p>Yona é a única princesa do reino, vivendo a vida luxuosa e despreocupada como uma 
+                        princesa deve ter. Ela tem tudo: as melhores roupas e cosméticos, os doces mais divinos, 
+                        um imperador como pai amoroso, e tem uma queda pelo seu primo, Soo Won. Agora, se o guarda-costas dela, 
+                        Son Hak, não fosse tão chato com ela e seu cabelo não fosse tão vermelho… Mas seu mundo quase perfeito 
+                        rapidamente se destrói quando o homem que ela ama, Soo Won, mata seu pai e o seu caminho para sua ascensão ao trono 
+                        é assegurado.</p>
+                </div>
+            </div>
+            <div class="anime-item">
+                <img src="./image2.jpg" alt="Anime 2">
+                <div class="anime-info">
+                    <h2>Ookami Shoujo to Kuro Ouji</h2>
+                    <p>Ookami Shoujo to Kuro Ouji é uma série que quebrou moldes e crenças quando se 
+                        trata de um casal de anime Shojo, tornando-se um boom. Conta a história de Kyouya Sata, 
+                        mais conhecido como “o príncipe”, e Erika Shinohara , uma garota com tendências Pinóquio que faz 
+                        seus amigos acreditarem que Kyouya é seu namorado, quando ele nem sabe que ela existe, mas como entre Céu e Terra. 
+                        Não há nada escondido do citado, ele descobriu a verdade e a ajudou a encobrir sua mentira. Mas é aí que começa a 
+                        história da cripta para o protagonista.</p>
+                </div>
+            </div>
+            <div class="anime-item">
+                <img src="./image4.png" alt="Anime 3">
+                <div class="anime-info">
+                    <h2>Kaichou wa Maid-sama</h2>
+                    <p>isaki Ayuzawa , presidente do conselho estudantil de uma escola secundária formada basicamente por meninos. 
+                        Ela é extremamente rígida, rude, disciplinada e forte, o que lhe rendeu o título de “presidente demônio”, 
+                        mas a realidade é que o kaicho tem um lado suave pouco conhecido. Por sua vez , Takumi Usui , é o garoto mais popular da escola, 
+                        e acidentalmente descobre um segredo que protagonista guardava sob 7 fechaduras e 7 dragões, mudando a vida de 
+                        ambos a partir de então para sempre. Um romance cheio de altos e baixos, complicações e sedução nas mãos do 
+                        “alienígena pervertido do espaço sideral” (protagonista).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio-message">Curta o som enquanto explora nossos animes!</div>
+
+        <audio controls autoplay>
+            <source src="audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <footer>
+        Feito por Eliza Augusta de Carvalho Neta
+    </footer>
+</body>
+</html>
