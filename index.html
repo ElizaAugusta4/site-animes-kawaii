@@ -7,11 +7,13 @@
     <link rel="icon" type="image/png" href="logo.png">
     <style>
         body {
-            background-color: pink;
-            font-family: Arial, sans-serif;
+            /* Utilizando um gradiente linear como fundo */
+            background: linear-gradient(135deg, #ffccff, #cc99ff);
+            font-family: 'Courier New', Courier, monospace; /* Aplicando a fonte diferenciada */
             margin: 0;
             padding: 0;
-            overflow-y: scroll; /* Adiciona a barra de rolagem vertical */
+            overflow-y: scroll;
+            
         }
 
         .container {
@@ -20,6 +22,33 @@
             padding: 20px;
             text-align: center;
         }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px; /* Ajuste o espaçamento conforme necessário */
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-right: 20px; /* Espaço entre o texto e a imagem */
+            font-size: 3em; /* Tamanho maior */
+            font-family: 'Courier New', Courier, monospace; /* Uma fonte diferenciada */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+        }
+
+
+        .sailor-moon-img {
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto; /* Para manter a proporção */
+        }
+
+        .laco {
+            width: 80px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto; /* Para manter a proporção */
+        }
 
         .anime-list {
             display: flex;
@@ -27,13 +56,6 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
-        }
-
-        body {
-            background-color: pink;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
         .container {
@@ -61,7 +83,7 @@
             border-radius: 8px;
             overflow: hidden;
             width: 500px;
-            height: 800px;
+            height: 1000px;
             display: flex;
             flex-direction: column;
         }
@@ -76,7 +98,12 @@
             padding: 10px;
             text-align: center;
             background-color: #fff;
+            font-family: 'Courier New', Courier, monospace; /* Aplicando a fonte diferenciada */
+            font-size: 1.1em; /* Tamanho um pouco maior que o padrão */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
         }
+
 
         /* Estilos para o áudio */
         audio {
@@ -118,18 +145,7 @@
                 transform: translateY(120vh); /* Altura total da janela do navegador + um pouco mais */
             }
         }
-
-        /* Posições aleatórias para os flocos de neve */
-        .snowflake:nth-child(1) {
-            left: 10%;
-            animation-duration: 12s; /* Mais lento */
-        }
-
-        .snowflake:nth-child(2) {
-            left: 20%;
-            animation-duration: 18s; /* Mais lento */
-        }
-
+        
         .snowflake:nth-child(3) {
             left: 30%;
             animation-duration: 15s; /* Mais lento */
@@ -144,7 +160,16 @@
             left: 50%;
             animation-duration: 16s; /* Mais lento */
         }
+        
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 8s; /* Reduzindo a duração da animação para aumentar a velocidade */
+        }
 
+        .snowflake:nth-child(2) {
+            left: 20%;
+            animation-duration: 12s; /* Ajuste conforme desejado */
+        }
         footer {
             text-align: center;
             background-color: #fff;
@@ -153,19 +178,22 @@
         }
     </style>
 </head>
-
 <body>
+
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
         <div class="snowflake"></div>
-        <div class="snowflake"></div>
     </div>
+    
 
     <div class="container">
-        <h1>Animes Shoujo</h1>
-
+        <div class="header">
+            <img src="./laco.png"alt="laco" class="laco">
+            <h1>Animes Shoujo</h1>
+            <img src="./sailormoon.png" alt="Sailor Moon" class="sailor-moon-img">
+        </div>
         <div class="anime-list">
             <div class="anime-item">
                 <img src="./image1.png" alt="Anime 1">
@@ -208,7 +236,7 @@
                 </div>
             </div>
         </div>
-
+        <br>
         <div class="audio-message">Curta o som enquanto explora nossos animes!</div>
 
         <audio controls autoplay>
@@ -218,7 +246,8 @@
     </div>
 
     <footer>
-        Feito por Eliza Augusta de Carvalho Neta
+        Feito com amor por Eliza Augusta de Carvalho Neta &#10084
     </footer>
 </body>
 </html>
+
