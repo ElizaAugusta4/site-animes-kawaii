@@ -8,6 +8,6 @@ FROM nginx
 COPY . /usr/share/nginx/html
 
 # Exponha a porta 80, que é a porta padrão para o servidor web nginx
-EXPOSE 80
+EXPOSE 8080
 
 
